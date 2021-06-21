@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+
+<head>
+    
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+    <body>  
+     <div class="header">
+     <button onclick="changeMode()" type="button" class="dark-mode" id="dark-mode">Change View</button> 
+    <div id="mySidenav" class="sidenav">
+      <a href="#"><i class="fa fa-clock-o fa-2x"></i>Timer</a>
+      <a href="#"><i class="fa fa-line-chart fa-2x"></i>Stats</a>
+      <a href="#"><i class="fa fa-gear fa-spin fa-2x"></i>Settings</a>
+    </div>
+    
+      
+    <div class="container-fluid text-center">
+      <div class="row"> 
+        <h1> Pomodoro Clock </h1>
+      </div>
+      
+      
+      <div class="row">
+          
+        <!-- for main -->
+        <div class="row top-row">
+        <h3 id="status">Work!</h3>
+        <canvas id="progress"></canvas>
+        <div id="timer"></div>
+      </div>
+      <div class="row top-row bottom">
+        <button type="button" class="btn btn-link" id="start"><i class="fa fa-play"></i></button>
+        <button type="button" class="btn btn-link" id="pause"><i class="fa fa-stop"></i></button>
+        <button type="button" class="btn btn-link" id="reset"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+      </div>
+      
+          <div class="row top-row">
+          <div class="col-xs-6 text-primary">
+          <h3>Session</h3>
+        </div>
+        <div class="col-xs-6 text-primary">
+          <h3>Break</h3>
+        </div>
+      </div>
+
+
+      <div class="row">
+      
+        <div class="col-xs-6">
+          <button type="button" class="btn btn-link btn-sm" id="minus2">-</button>
+          <button type="button" class="btn btn-link btn-lg" id="work-time">25</button>
+          <button type="button" class="btn btn-link btn-sm" id="plus2">+</button>
+        </div>
+        <div class="col-xs-6">
+          <button type="button" class="btn btn-link btn-sm" id="minus">-</button>
+          <button type="button" class="btn btn-link btn-lg" id="break-time">5</button>
+          <button type="button" class="btn btn-link btn-sm" id="plus">+</button>
+        </div>
+      </div>
+    
+    </body>
+      
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://www.jqueryscript.net/demo/Customizable-Liquid-Bubble-Chart-With-jQuery-Canvas/waterbubble.js"></script>
+  
+    <script src="script.js"></script>
+    </html>
