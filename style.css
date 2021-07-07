@@ -22,7 +22,8 @@ body {
     position: fixed;
     top: 20%;
     left: 0;
-    background-color: #111;
+    align-items: center;
+    text-align: center;
     overflow-x: none;
     transition: 0.5s;
     padding-top: 60px;
@@ -53,7 +54,7 @@ body {
 }
 
 #minus, #plus, #minus2, #plus2{
-  border-radius:50%;
+  border-radius:40%;
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -102,6 +103,18 @@ body {
 .dark-mode {
   background-color: black;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 25px;
   border-radius: 12px;
+}
+
+.dark-mode .sidebar:hover{
+  background-color: white;
+}
+
+.dark-mode .btn:hover{
+  background-color: rgb(77, 189, 226);
+}
+
+.dark-mode .sidenav a:hover {
+  color: rgb(77, 189, 226);
 }
